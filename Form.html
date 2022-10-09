@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Portal</title>
+    <style>
+        body {
+            background-position: center;
+  background-image: url(img_car.jpg);
+
+}
+        h1 {
+            text-align: center;
+            color: rgb(10, 12, 12);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+        
+        .form {
+            opacity: 0.6;
+            border-radius: 5px;
+            top: 70px;
+            padding: 15px 0 5px 15px;
+            margin-right: auto;
+            display: block;
+            margin-left: auto;
+            background-color: rgb(241, 242, 243);
+            border-style: none;
+            width: 50%;
+        }
+        
+        .container {
+            position: absolute;
+            right: 0;
+            margin: 20px;
+            max-width: 300px;
+            padding: 16px;
+            background-color: white;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 1px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        
+        input[type=date] {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        
+        input[type=number] {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        
+        .bg-img {
+            background-image: url("img_car.jpg");
+            min-height: 380px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .btn {
+            text-align: center;
+            background-color: #04AA6D;
+            color: white;
+            padding-right: 50px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            margin-left: 70px;
+            border: none;
+            cursor: pointer;
+            width: 80%;
+            opacity: 0.8;
+        }
+        
+        .btn:hover {
+            opacity: 1;
+        }
+        .same {
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div >
+    <h1> Admission Portal</h1>
+    
+        <form class="form" action="" autocomplete="on">
+            <h2 class="same">Login</h2>
+            <label class="same" for="fname"><b>First Name:</b></label><br>
+            <input type="text" id="fname" name="fname" value="Harris" required ><br>
+            <br>
+            <label class="same" for="lname"><b>Last Name:</b></label><br>
+            <input type="text" id="lname" name="lname" value="Miles" required><br>
+            <br>
+            <label class="same" for="Gender"><b>Gender </b></label><br>
+
+            <select id="gender" name="gender">
+            <option value="Select">Select..</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+            <br>
+
+            <label class="same" for="date"><b>Date of Birth:</b></label><br>
+            <input type="date" name="date" id="date" cols="50" rows="2" value="D.O.B" required><br>
+            <br>
+            <label class="same" for="frname"><b>Father's Name:</b></label><br>
+            <input type="text" id="frname" name="frname" value="Abc" required>
+            <br>
+
+            <p><label class="same" for="Address"><b>Address:</b></label><br>
+                <textarea name="Address" id="Address" placeholder="Address limit is 20 words...."  style="height: 125px;"></textarea>
+            </p>
+
+            <label class="same" for="mobile"><b>Mobile Number:</b></label><br>
+            <input type="number" id="mobile" name="mobile" value="" required><br>
+            <br>
+
+
+            <p><label class="same" for="mode"><b>Payment Mode</b></label><br>
+                <select name="mode" id="mode" required> 
+                <option value="">--Select a payment mode--</option>
+                <option value="Debit">Debit Card</option>
+                <option value="credit">Credit Card</option>
+                <option value="banking">Net Banking</option>
+                <option value="upi">UPI</option>
+
+            </select>
+            </p>
+            <!--<button type="submit" class="btn">Login</button>-->
+            <button type="button" class="btn" onclick="alert('Backend not Ready yet!')">Login</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
